@@ -1,0 +1,96 @@
+#privacy-copilot-notification-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    pointer-events: none;
+}
+
+.privacy-copilot-blocking-notification {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s;
+    pointer-events: auto;
+    background: white;
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.12),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 10px 16px;
+    gap: 12px;
+    overflow: hidden;
+
+    .privacy-copilot-notification-message {
+        font-size: 14px;
+        line-height: 1.4;
+        color: var(--spc-text-color, #29303b);
+        font-weight: 600;
+        word-wrap: break-word;
+        max-width: 90%;
+        font-family: 'Nunito', sans-serif !important;
+        font-optical-sizing: auto;
+    }
+
+    .privacy-copilot-notification-icon {
+        font-size: 20px;
+    }
+
+    &.error {
+        background-color: var(--spc-error-color, #f9b4b4);
+    }
+    &.warning {
+        background-color: var(--spc-warning-color, #f7e4b4);
+    }
+    &.info {
+        background-color: var(--spc-info-color, #afcff5);
+    }
+}
+
+.privacy-copilot-close-btn {
+    background: transparent;
+    border: none;
+    color: var(--spc-text-color, #29303b);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    line-height: 1;
+    appearance: none;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.privacy-copilot-sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--spc-error-color, #f9b4b4);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    animation: flash 0.85s ease-out;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}

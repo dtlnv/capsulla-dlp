@@ -1,0 +1,143 @@
+{
+    "clipboardRules": [
+        {
+            "mask": "[EMAIL]",
+            "pattern": "\\b[\\w.-]+@[\\w.-]+\\.\\w{2,4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[SSN]",
+            "pattern": "\\b\\d{3}-\\d{2}-\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[SSN]",
+            "pattern": "\\b\\d{3} \\d{2}-\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[SSN]",
+            "pattern": "\\b\\d{2}-\\d{2}-\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[CARD]",
+            "pattern": "\\b(?:\\d[ -]*?){13,16}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[CARD]",
+            "pattern": "\\b\\d{4}-\\d{4}-\\d{4}-\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[CARD]",
+            "pattern": "\\b\\d{16}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[CARD]",
+            "pattern": "\\b\\d{4} \\d{4} \\d{4} \\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[CARD]",
+            "pattern": "\\b\\d{3}-\\d{3}-\\d{3}-\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[CARD]",
+            "pattern": "\\b\\d{3}\\.\\d{3}\\.\\d{3}\\.\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[PHONE]",
+            "pattern": "\\b\\d{10,11}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[PHONE]",
+            "pattern": "\\b\\d{3}-\\d{3}-\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[PHONE]",
+            "pattern": "\\b\\d{3}\\.\\d{3}\\.\\d{4}\\b",
+            "react": "warn"
+        },
+        {
+            "mask": "[PHONE]",
+            "pattern": "\\b\\d{3} \\d{3} \\d{4}\\b",
+            "react": "warn"
+        }
+    ],
+    "downloadRules": [
+        "application/octet-stream",
+        "application/x-msdownload",
+        "application/x-dosexec",
+        "application/x-executable",
+        "application/x-ms-installer",
+        "application/x-sh",
+        "application/x-bat",
+        "application/x-cmd",
+        "application/x-scr",
+        "application/x-compressed",
+        "application/x-zip-compressed",
+        "application/java-archive",
+        "application/x-java-archive",
+        "application/x-elf",
+        "application/x-php",
+        "application/x-python",
+        "application/x-perl",
+        "application/x-ruby",
+        "application/x-msdos-program",
+        "application/x-shellscript",
+        "application/x-powershell",
+        "application/x-ms-shortcut",
+        "application/x-iso9660-image",
+        "application/x-bzip-compressed-tar",
+        "application/x-gzip",
+        "application/x-tar",
+        "application/x-7z-compressed",
+        "application/x-rar-compressed",
+        "application/x-arj",
+        "application/vnd.microsoft.portable-executable"
+    ],
+    "uploadRules": [
+        "application/pdf",
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.ms-excel",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "application/vnd.ms-powerpoint",
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "application/rtf",
+        "text/plain",
+        "text/csv",
+        "text/tab-separated-values",
+        "text/html",
+        "application/json",
+        "application/xml",
+        "application/x-yaml",
+        "application/x-sh",
+        "application/x-bash",
+        "application/x-powershell",
+        "application/x-perl",
+        "application/x-python",
+        "application/x-php",
+        "application/x-javascript",
+        "application/sql",
+        "application/x-sql",
+        "application/pgp-encrypted",
+        "application/zip",
+        "application/x-rar-compressed",
+        "application/x-7z-compressed",
+        "application/x-tar",
+        "application/gzip",
+        "application/x-bzip2",
+        "application/vnd.apple.keynote",
+        "application/vnd.google-apps.document",
+        "application/vnd.google-apps.spreadsheet",
+        "application/vnd.google-apps.presentation"
+    ]
+}

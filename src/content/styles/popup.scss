@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+// Base body styles
+body#privacy-copilot-popup-body {
+    @media (prefers-color-scheme: light) {
+        @include light;
+    }
+    @media (prefers-color-scheme: dark) {
+        @include dark;
+    }
+
+    width: 260px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    font-family: var(--spc-font-family);
+    color: var(--spc-text-color);
+    background-color: var(--spc-background-color);
+    box-sizing: border-box;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    * {
+        box-sizing: border-box;
+        font-family: var(--spc-font-family);
+    }
+
+    .spc-popup-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid var(--spc-border);
+        border-radius: var(--spc-border-radius);
+        background-color: var(--spc-input);
+
+        .spc-button {
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            padding: 0.4rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 1px solid transparent;
+            border-radius: var(--spc-border-radius);
+            cursor: pointer;
+            transition: var(--spc-transition);
+            white-space: nowrap;
+            text-decoration: none;
+            background-color: var(--spc-regular-button-background);
+            color: var(--spc-regular-button-color);
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(33, 126, 232, 0.2);
+            }
+
+            &:hover {
+                background-color: var(--spc-regular-button-hover);
+            }
+        }
+    }
+
+    .spc-description {
+        font-size: 14px;
+        color: var(--spc-text);
+    }
+
+    .spc-version {
+        font-size: 12px;
+        color: var(--spc-text);
+        opacity: 0.5;
+    }
+}

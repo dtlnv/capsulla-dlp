@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Capsulla - Lightweight DLP",
+    "description": "",
+    "version": "1.0.0",
+    "icons": {
+        "48": "images/logo-48.png",
+        "128": "images/logo-128.png"
+    },
+    "permissions": ["storage", "activeTab", "clipboardRead", "clipboardWrite", "downloads"],
+    "background": {
+        "service_worker": "./src/service-worker.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["./src/content.js"],
+            "css": ["./src/styles.css"],
+            "matches": ["https://*/*", "http://*/*"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["images/*", "src/injected.js"],
+            "matches": ["https://*/*", "http://*/*"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    }
+}

@@ -1,0 +1,77 @@
+:root {
+    --spc-font-family: 'Nunito', sans-serif;
+    --spc-primary: #217ee8;
+    --spc-border-radius: 8px;
+    --spc-transition: all 0.2s ease-in-out;
+    --spc-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --spc-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --spc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@mixin light {
+    --spc-error-color: #dc2626;
+    --spc-warning-color: #d97706;
+    --spc-info-color: #2563eb;
+    --spc-success-color: #16a34a;
+    --spc-text-color: #29303b;
+    --spc-text-muted: #6b7280;
+    --spc-background-color: #f0f4f8;
+    --spc-foreground: oklch(0.141 0.005 285.823);
+    --spc-border: oklch(0.92 0.004 286.32);
+    --spc-input: #ffffff;
+    --spc-input-focus: #f9fafb;
+    --spc-ring: oklch(55.463% 0.22023 259.496);
+    --spc-muted: oklch(0.967 0.001 286.375);
+    --spc-table-accent: rgba(59, 130, 246, 0.05);
+    --spc-table-hover: rgba(59, 130, 246, 0.1);
+    --spc-primary-foreground: #ffffff;
+    --spc-regular-button-background: #edf1f5;
+    --spc-regular-button-color: #334155;
+    --spc-regular-button-hover: #e2e8f0;
+    --spc-danger: #ef4444;
+    --spc-danger-hover: #dc2626;
+    --spc-danger-bg: #fef2f2;
+    --spc-invalid-bg: #fef2f2;
+    --spc-invalid-border: #fca5a5;
+}
+
+@mixin dark {
+    --spc-error-color: #f87171;
+    --spc-warning-color: #fbbf24;
+    --spc-info-color: #60a5fa;
+    --spc-success-color: #4ade80;
+    --spc-text-color: #f1f5f9;
+    --spc-text-muted: #9ca3af;
+    --spc-background-color: #0f172a;
+    --spc-foreground: oklch(0.985 0 0);
+    --spc-border: rgba(148, 163, 184, 0.2);
+    --spc-input: #1e293b;
+    --spc-input-focus: #334155;
+    --spc-ring: oklch(55.463% 0.22023 259.496);
+    --spc-muted: #334155;
+    --spc-table-accent: rgba(59, 130, 246, 0.1);
+    --spc-table-hover: rgba(59, 130, 246, 0.15);
+    --spc-primary-foreground: #ffffff;
+    --spc-regular-button-background: #334155;
+    --spc-regular-button-color: #f1f5f9;
+    --spc-regular-button-hover: #475569;
+    --spc-danger: #ef4444;
+    --spc-danger-hover: #f87171;
+    --spc-danger-bg: rgba(239, 68, 68, 0.1);
+    --spc-invalid-bg: rgba(239, 68, 68, 0.1);
+    --spc-invalid-border: #ef4444;
+}
+
+.spc-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.spc-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}

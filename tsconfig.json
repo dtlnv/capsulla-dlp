@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "./build",
+        "rootDir": "./src",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": ["dom", "dom.iterable", "es6"],
+        "allowJs": true,
+        "noEmit": false,
+        "isolatedModules": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "jsx": "react-jsx",
+        "paths": {
+            "@/*": ["src/*"],
+            "@/content/*": ["src/content/*"],
+            "@/service-worker/*": ["src/service-worker/*"],
+            "@/types/*": ["src/types/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "build"]
+}
