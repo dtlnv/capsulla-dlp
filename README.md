@@ -1,5 +1,9 @@
 # Capsulla Privacy Copilot - Lightweight DLP
 
+<p align="center">
+  <a href="https://chrome.google.com/webstore/detail/capsulla-lightweight-dlp/mlkicompblcckemkmmphgnebgfapdpbf">Available in Chrome Store</a>
+</p>
+
 ## Overview
 
 **Capsulla** Privacy Copilot is a Zero Trust browser extension designed to prevent accidental data leaks via browser-based actions. It monitors and enforces customizable rules for clipboard usage, file uploads, and file downloads.
